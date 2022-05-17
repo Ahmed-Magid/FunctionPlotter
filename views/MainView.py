@@ -143,7 +143,11 @@ class MainView(QMainWindow):
         self.changeColorButton.setText(_translate("MainWindow", "Change Color"))
         self.instructionsButton.setText(_translate("MainWindow", "Instructions"))
 
-    def plotFunction(self):
+    def plotFunction(self) -> None:
+        """
+        Plots the given function after reading it from the text field along with min and max values and evaluating them.
+        """
+
         function = self.functionField.text()
         try:
             self.validator.isValidFunction(function)
@@ -161,13 +165,21 @@ class MainView(QMainWindow):
         self.reloadPlotter()
         self.plotter.plot(xCoordinates, yCoordinates)
 
-    def changeColor(self):
+    def changeColor(self) -> None:
+        """
+        Prompts for a color and sets the background with chosen color.
+        """
+
         color = QtWidgets.QColorDialog.getColor()
         if color.isValid():
             self.color = color
             self.plotter.setBackground(self.color)
 
     def reloadPlotter(self):
+        """
+        Resets the graph to be ready to plot a new function.
+        """
+
         self.verticalLayout.removeWidget(self.plotter)
         self.plotter = PlotWidget(self.verticalLayoutWidget)
         self.plotter.setMinimumSize(QtCore.QSize(0, 700))
@@ -178,5 +190,8 @@ class MainView(QMainWindow):
         self.verticalLayout.addWidget(self.plotter)
 
     def openInstructionsDialog(self):
+        """
+        Shows the instruction dialog
+        """
         instructionsDialog = InstructionsDialog()
         instructionsDialog.show()
