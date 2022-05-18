@@ -30,4 +30,6 @@
 
 
 ## 🖥️ Program Demo
-![Program Demo](https://i.imgur.com/saJPUp6.gif "Program Demo")
+<p align="center">
+  <img width="800" src="https://media.giphy.com/media/KhvOdHxUHnSqiyXb5a/giphy.gif" alt="Material Bread logo">
+</p>

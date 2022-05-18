@@ -6,7 +6,7 @@ class InstructionsDialog(QDialog):
     def __init__(self):
         super(InstructionsDialog, self).__init__()
         self.setObjectName("InstructionsDialog")
-        self.resize(400, 140)
+        self.setFixedSize(400, 140)
         self.verticalLayoutWidget = QtWidgets.QWidget(self)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 400, 140))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
