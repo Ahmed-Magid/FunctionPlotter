@@ -15,6 +15,7 @@ class MainView(QMainWindow):
         self.validator = Validator()
         self.setObjectName("MainWindow")
         self.resize(1155, 745)
+        self.setWindowIcon(QtGui.QIcon('images/icon.png'))
         self.centralwidget = QtWidgets.QWidget(self)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
