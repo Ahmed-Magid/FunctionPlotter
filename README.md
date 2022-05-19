@@ -31,5 +31,5 @@
 
 ## 🖥️ Program Demo
 <p align="center">
-  <img width="800" src="https://media.giphy.com/media/KhvOdHxUHnSqiyXb5a/giphy.gif" alt="Material Bread logo">
+  <img src="https://github.com/Ahmed-Magid/FunctionPlotter/blob/main/images/Demo.gif" alt="Material Bread logo">
 </p>
