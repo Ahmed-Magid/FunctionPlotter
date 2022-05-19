@@ -30,6 +30,4 @@
 
 
 ## 🖥️ Program Demo
-<p align="center">
-  <img src="https://github.com/Ahmed-Magid/FunctionPlotter/blob/main/images/Demo.gif" alt="Material Bread logo">
-</p>
+![Program Demo](https://github.com/Ahmed-Magid/FunctionPlotter/blob/main/images/Demo.gif "Program Demo")
